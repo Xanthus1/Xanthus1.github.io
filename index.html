@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		
+		body {
+			background-color: #111111;
+		}
+		
+		* {
+			color: #cccccc;
+		}	
+		
+		.header {
+			position: fixed;
+			z-index:1;
+		  }
+
+		.jumbotron {
+			color: #222222;
+			background-color: #cccccc;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+
+		.darker {
+			color: #222222;
+		}
+		
+		.dark-bg{
+			background-color: #222222;
+		}		
+
+		.mybtn-link{
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 32px 32px;
+			width: 60px;
+			height: 40px;
+			padding: .75em;
+			transition-timing-function: linear;
+			transition-duration: .25s;
+		}
+		.mybtn-link:hover{
+			width:80px;
+		}
+		.mybtn-link-small{
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 20px 20px;
+			width: 40px;
+			height: 30px;	
+			padding: .4em;
+			transition-timing-function: linear;
+			transition-duration: .25s;
+		}
+		.mybtn-link-small:hover{
+			width:60px;
+		}
+
+		.git-link {
+			background-image: url("https://xanthus1.github.io/images/GitHub-Mark-Light-64px.png");
+		}
+		.itchio-link {
+			background-image: url("https://xanthus1.github.io/images/itchio-textless-white.svg");
+		}
+		.li-link {
+			background-image: url("https://xanthus1.github.io/images/LI-In-Bug.png");
+		}
+
+		.project-text {
+			text-align:center;
+			margin: 5px;
+			color: #cccccc;
+		}
+		.project-img {
+			display: block;
+			margin:auto;
+			min-height:200px;
+			max-height:300px;
+			max-width:100%;
+			padding: 5px;
+		}
+		.project-bg {
+			display: block;
+			background-color:#223344;
+			border: 2px solid #445566;
+			border-radius: 8px;
+			padding: 10px;
+			margin-bottom: 50px;
+		}
+		
+		.footer{
+			margin-top: 200px;
+		}
+	</style>
+
+	<body data-spy="scroll" data-target="#myNavBar" data-offset="300">
+	<div  class="header navbar-fixed-top clearfix dark-bg">
+		<nav id="myNavBar">
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#Intro">Intro</a></li>
+				<li><a href="#Projects">Projects</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="container dark-bg">
+		<div id="Intro" class="jumbotron" align="center">
+			<h1 >Scott Nalley</h1>
+			<h3 >Software Engineer with IT and Project Management Experience.<br>Hobbyist Game Developer.</h3>
+			<p><a href="#Contact" class="btn btn-info">Contact Me</a></p>
+		</div>
+		<div>		
+			<p align="center" class="lead">Welcome to my projects website! See below for some of my game development and software projects.</p>
+		</div>
+		<div id="Projects" style="margin-bottom:40px"></div>		
+		<div class="row marketing">
+			<h2 align="center">Projects</h2>
+			<div class="col-lg-6">
+				<div class="project-bg">
+					<div class="h2 project-text" >
+						SmashBuzz <a href="https://smashbuzz.xanthusapps.com" class="btn btn-info mybtn-link ">LINK</a>
+					</div>
+					<p>Developed in React using a serverless AWS Lambda backend in NodeJS, and MongoDB. This app leverages data gathered from Twitter’s API and Smash.gg’s GraphQL endpoint to display recent and upcoming tournaments with related mentions on Twitter. </p>
+					<img class="project-img" src="https://xanthus1.github.io/images/SmashBuzz.PNG">
+				</div>
+
+				<div class="project-bg">
+					<div class="h2 project-text" >
+						Magic Mirror Module <a href="https://github.com/Xanthus1/MMM-ITCH-IO" class="btn btn-info mybtn-link git-link"></a>
+					</div>
+					<p>Developed and deployed on a Raspberry Pi. Utilizing javascript within the ‘Magic Mirror’
+		framework, this module queries recently posted games from the itch.io website (via an RSS feed) and
+		displays them in a cycling feed on the screen.</p>
+					<img class="project-img" src="https://xanthus1.github.io/images/mmm-itch-io.png">
+				</div>
+
+				<div class="project-bg">
+					<div class="h2 project-text" >
+						Open source contributions <a href="https://github.com/Xanthus1" class="btn btn-info mybtn-link git-link"></a>
+					</div>
+					<p>I've submitted fixes on GitHub for bugs I've discovered in a few tools that I use. Includes software built on NodeJS, .NET, and others.</p>
+				</div>	
+
+				<div class="project-bg">
+					<div class="h2 project-text">
+						3D Level Design <a href="https://warsow.net/" class="btn btn-info mybtn-link">Link</a>
+					</div>
+					<p>I designed and modeled the physical layout for this stage with 3D modeling tools. An artist gave it some style and it's now included the official release for Warsow, an open source first person shooter.</p>
+					<img class="project-img" src="https://xanthus1.github.io/images/wswmap2.jpg">
+				</div>
+				
+				<div class="project-bg">
+					<div class="h2 project-text">One Step from Eden Mods</div>
+					<p>I collaborated with a small team (Eden's Treasures) to create two mods for One Step from Eden using C# and LUA. Published on Steam Workshop with 500+ downloads. The two mods are "Bolts and Volts" and "Juggler's Pack", which add new core mechanics and a number of new assets for additional gameplay and replayability.</p>
+					<img class="project-img" src="https://xanthus1.github.io/images/OSFE_mod2.png">
+				</div>
+				
+			</div>
+
+			<div class="col-lg-6">				
+				<div class="project-bg">
+					<div class="h2 project-text">
+						Fractured Rogue	<a href="https://xanthus.itch.io/fractured-rogue" class="btn btn-info mybtn-link itchio-link"></a>
+					</div>
+					<p>Fractured Rogue is a Roguelike game developed on the virtual Pico-8 system in LUA.</p>
+					<img class="project-img"src="https://xanthus1.github.io/images/fractured-rogue.png">
+				</div>
+
+				<div class="project-bg">
+					<div class="h2 project-text">
+						Castlevania Aria of Sorrow: Reprise	<a href="https://www.romhacking.net/forum/index.php?topic=35962.0" class="btn btn-info mybtn-link">Link</a>
+					</div>
+					<p>Reprise is a RomHack of Castlevania Aria of Sorrow that changes the core gameplay to become a completely randomized, endless roguelike. Tons of customized content and gameplay modifications written in over 5000 lines of assembly.</p>
+					<img class="project-img"src="https://imgur.com/G7WpTsR.png">
+				</div>
+
+				<div class="project-bg">
+					<div class="h2 project-text">
+						Renew Arena <a href="https://itch.io/jam/7dfps-2020/rate/854982" class="btn btn-info mybtn-link itchio-link"></a>
+					</div>
+					<p>This FPS game was made in 7 days for the 7DFPS game jam as well as ProcJam (2020). It was built in Unity using C# and features procedurally generated levels.</p>
+					<img class="project-img" src="https://xanthus1.github.io/images/RenewArena.png">
+				</div>
+				
+				<div class="project-bg">
+					<div class="h2 project-text">
+						Minetest Mod - Cube Mobs <a href="https://github.com/Xanthus1/cube_mobs" class="btn btn-info mybtn-link git-link "></a>
+					</div>
+					<p>This mod for Minetest in LUA that provides a custom set of enemies. 1200+ downloads on <a href="https://content.minetest.net/packages/Xanthus/cube_mobs/">ContentDB</a>.</p>
+					<img class="project-img" src="https://xanthus1.github.io/images/cube-mobs.png">
+				</div>	
+			</div>
+		</div>
+		<div id="Contact" class="jumbotron" align="center">
+			<h2 align="center">Contact</h2>
+			<div align="center">
+				<p class="darker"><a href="mailto:w.scott.nalley@gmail.com" class="btn btn-info mybtn-link mybtn-link-small">  <span style="font-size:16px; color:#ffffff" class="glyphicon glyphicon-envelope"></span></a>  E-mail: w.scott.nalley@gmail.com </p>
+				<p class="darker"><a href="https://www.linkedin.com/in/scott-nalley-435030177/" class="btn btn-info mybtn-link mybtn-link-small li-link"> </a>  LinkedIn: https://www.linkedin.com/in/scott-nalley-435030177/ </p>
+			</div>
+		</div>
+
+		<footer class="footer" >
+			<p>© 2022 Scott Nalley</p>
+		</footer>
+
+	</div> <!-- /container -->
+	</body>
+</html>
