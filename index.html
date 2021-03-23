@@ -10,20 +10,22 @@
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		
+		body {
+			background-color: #111111;
+		}
+		
 		* {
 			color: #cccccc;
-		}
-
-		html {
-	    scroll-behavior: smooth;
-		}
-
-
+		}	
+		
 		.header {
-	    top: 40%;
-	    position: fixed;
+			position: fixed;
 			z-index:1;
-	  }
+		  }
 
 		.jumbotron {
 			color: #222222;
@@ -35,8 +37,10 @@
 		.darker {
 			color: #222222;
 		}
-
-		body {background-color: #111111}
+		
+		.dark-bg{
+			background-color: #222222;
+		}		
 
 		.mybtn-link{
 			background-repeat: no-repeat;
@@ -94,33 +98,33 @@
 			padding: 10px;
 			margin-bottom: 50px;
 		}
-
+		
 		.footer{
 			margin-top: 200px;
 		}
 	</style>
 
 	<body data-spy="scroll" data-target="#myNavBar" data-offset="300">
-	<div style="background-color:#222222" class="header collapse navbar-collapse">
+	<div  class="header navbar-fixed-top clearfix dark-bg">
 		<nav id="myNavBar">
-			<ul class="nav nav-pills nav-stacked">
+			<ul class="nav nav-pills">
 				<li class="active"><a href="#Intro">Intro</a></li>
 				<li><a href="#Projects">Projects</a></li>
 				<li><a href="#Contact">Contact</a></li>
 			</ul>
 		</nav>
-		<!-- <h3 class="text-muted">Scott Nalley</h3> -->
 	</div>
-	<div style="background-color:#222222" class="container">
+	<div class="container dark-bg">
 		<div id="Intro" class="jumbotron" align="center">
 			<h1 >Scott Nalley</h1>
 			<h3 >Software Engineer with Project Management Experience.<br>Hobby Game Developer.</h3>
 			<p><a href="#Contact" class="btn btn-info">Contact Me</a></p>
 		</div>
-		<div>
+		<div>		
 			<p align="center" class="lead">Welcome to my projects website! See below for some of my software and game development projects.</p>
 		</div>
-		<div id="Projects" class="row marketing">
+		<div id="Projects" style="margin-bottom:40px"></div>		
+		<div class="row marketing">
 			<h2 align="center">Projects</h2>
 			<div class="col-lg-6">
 				<div class="project-bg">
