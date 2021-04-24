@@ -48,6 +48,7 @@
 			background-size: 32px 32px;
 			width: 60px;
 			height: 40px;
+			padding: .75em;
 			transition-timing-function: linear;
 			transition-duration: .25s;
 		}
@@ -57,9 +58,10 @@
 		.mybtn-link-small{
 			background-repeat: no-repeat;
 			background-position: center;
-			background-size: 24px 24px;
+			background-size: 20px 20px;
 			width: 40px;
-			height: 30px;
+			height: 30px;	
+			padding: .4em;
 			transition-timing-function: linear;
 			transition-duration: .25s;
 		}
@@ -117,7 +119,7 @@
 	<div class="container dark-bg">
 		<div id="Intro" class="jumbotron" align="center">
 			<h1 >Scott Nalley</h1>
-			<h3 >Software Engineer with Project Management Experience.<br>Game Developer.</h3>
+			<h3 >Software Engineer with Project Management Experience.<br>Hobby Game Developer.</h3>
 			<p><a href="#Contact" class="btn btn-info">Contact Me</a></p>
 		</div>
 		<div>		
@@ -129,20 +131,22 @@
 			<div class="col-lg-6">
 				<div class="project-bg">
 					<div class="h2 project-text" >
+						SmashBuzz <a href="https://smashbuzz.xanthusapps.com" class="btn btn-info mybtn-link ">LINK</a>
+					</div>
+					<p>Developed in React using a serverless AWS Lambda backend in NodeJS, and MongoDB. This app leverages data gathered from Twitter’s API and Smash.gg’s GraphQL endpoint to display recent and upcoming tournaments with related mentions on Twitter. </p>
+					<img class="project-img" src="https://xanthus1.github.io/images/SmashBuzz.PNG">
+				</div>
+				
+				
+				
+				<div class="project-bg">
+					<div class="h2 project-text" >
 						Magic Mirror Module <a href="https://github.com/Xanthus1/MMM-ITCH-IO" class="btn btn-info mybtn-link git-link"></a>
 					</div>
 					<p>Developed and deployed on a Raspberry Pi. Utilizing javascript within the ‘Magic Mirror’
 		framework, this module queries recently posted games from the itch.io website (via an RSS feed) and
 		displays them in a cycling feed on the screen.</p>
 					<img class="project-img" src="https://xanthus1.github.io/images/mmm-itch-io.png">
-				</div>
-				
-				<div class="project-bg">
-					<div class="h2 project-text" >
-						Todo App on MERN Stack <a href="https://github.com/Xanthus1/todo-app-backend" class="btn btn-info mybtn-link git-link"></a>
-					</div>
-					<p>Developed a To-do application on a MERN stack (MonboDB, Express, React, Node). Uses a RESTful API backend to interact with the database. Deployed via Heroku and a demo is avaiable here: <a href="https://xanthus-todo-react.herokuapp.com/">[ Demo ]</a> </p>
-					<img class="project-img" src="https://xanthus1.github.io/images/Todo-app.PNG">
 				</div>
 
 				<div class="project-bg">
@@ -156,23 +160,31 @@
 					<div class="h2 project-text">Voice Controlled Mind-Map Android App</div>
 					<p>Android application utilizing a voice user interface (VUI) to create, navigate, and manage “mind maps”
 			for brainstorming and keeping notes. Utilizes an open source animation library.</p>
-				</div>
-				<div class="project-bg">
-					<div class="h2 project-text">
-						Minetest Mod - Cube Mobs <a href="https://github.com/Xanthus1/cube_mobs" class="btn btn-info mybtn-link git-link "></a>
-					</div>
-					<p>This mod for Minetest in LUA that provides a custom set of enemies. 1200+ downloads on <a href="https://content.minetest.net/packages/Xanthus/cube_mobs/">ContentDB</a>.</p>
-					<img class="project-img" src="https://xanthus1.github.io/images/cube-mobs.png">
-				</div>
+				</div>				
 
 				<div class="project-bg">
 					<div class="h2 project-text">3D Level Design</div>
 					<p>I designed and modeled the physical layout for this stage with 3D modeling tools. An artist gave it some style and it's now included the official release for Warsow, an open source first person shooter.</p>
 					<img class="project-img" src="https://xanthus1.github.io/images/wswmap2.jpg">
 				</div>
+				
+				<div class="project-bg">
+					<div class="h2 project-text">One Step from Eden Mods</div>
+					<p>I collaborated with a small team (Eden's Treasures) to create two mods for One Step from Eden using C# and LUA. Published on Steam Workshop with 400+ downloads. The two mods are "Bolts and Volts" and "Juggler's Pack", which add new core mechanics and a number of new assets for additional gameplay and replayability.</p>
+					<img class="project-img" src="https://xanthus1.github.io/images/OSFE_mod2.png">
+				</div>
+				
 			</div>
 
 			<div class="col-lg-6">
+				<div class="project-bg">
+					<div class="h2 project-text" >
+						Todo App on MERN Stack <a href="https://github.com/Xanthus1/todo-app-backend" class="btn btn-info mybtn-link git-link"></a>
+					</div>
+					<p>Developed a To-do application on a MERN stack (MonboDB, Express, React, Node). Uses a RESTful API backend to interact with the database. Deployed via Heroku and a demo is avaiable here: <a href="https://xanthus-todo-react.herokuapp.com/">[ Demo ]</a> </p>
+					<img class="project-img" src="https://xanthus1.github.io/images/Todo-app.PNG">
+				</div>
+				
 				<div class="project-bg">
 					<div class="h2 project-text">
 						Fractured Rogue	<a href="https://xanthus.itch.io/fractured-rogue" class="btn btn-info mybtn-link itchio-link"></a>
@@ -189,6 +201,14 @@
 					<p>This FPS game was made in 7 days for the 7DFPS game jam as well as ProcJam (2020). It was built in Unity using C# and features procedurally generated levels.</p>
 					<img class="project-img" src="https://xanthus1.github.io/images/RenewArena.png">
 				</div>
+				
+				<div class="project-bg">
+					<div class="h2 project-text">
+						Minetest Mod - Cube Mobs <a href="https://github.com/Xanthus1/cube_mobs" class="btn btn-info mybtn-link git-link "></a>
+					</div>
+					<p>This mod for Minetest in LUA that provides a custom set of enemies. 1200+ downloads on <a href="https://content.minetest.net/packages/Xanthus/cube_mobs/">ContentDB</a>.</p>
+					<img class="project-img" src="https://xanthus1.github.io/images/cube-mobs.png">
+				</div>
 
 				<div class="project-bg">
 					<div class="h2 project-text">
@@ -196,13 +216,7 @@
 					</div>
 					<p>Mystery Hunter was created for the 1-bit Clicker Jam on itch.io over the course of two weeks (Ranked #40 out of 143 entries). Developed on the virtual Pico-8 system in LUA.</p>
 					<img class="project-img" src="https://xanthus1.github.io/images/mysteryhunter.png">
-				</div>
-
-				<div class="project-bg">
-					<div class="h2 project-text">One Step from Eden Mods</div>
-					<p>I collaborated with a small team (Eden's Treasures) to create two mods for One Step from Eden using C# and LUA. Published on Steam Workshop with 400+ downloads. The two mods are "Bolts and Volts" and "Juggler's Pack", which add new core mechanics and a number of new assets for additional gameplay and replayability.</p>
-					<img class="project-img" src="https://xanthus1.github.io/images/OSFE_mod2.png">
-				</div>
+				</div>			
 
 			</div>
 		</div>
